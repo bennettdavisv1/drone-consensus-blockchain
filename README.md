@@ -1,6 +1,4 @@
-## 📄 `README.md`
 
-````
 # Drone Consensus Blockchain (Mock Implementation)
 
 This project provides a **mock blockchain** system for submitting drone flight plans and reaching consensus on whether they can be approved.  
@@ -94,5 +92,4 @@ curl http://127.0.0.1:8000/chain
 ```
 
 Returns a full JSON list of blocks and transactions.
-
-````
+```
