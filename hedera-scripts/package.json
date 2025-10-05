@@ -18,6 +18,7 @@
   "author": "Bennett Davis",
   "license": "ISC",
   "dependencies": {
-    "@hashgraph/sdk": "^2.48.0"
+    "@hashgraph/sdk": "^2.48.0",
+    "dotenv": "^17.2.3"
   }
 }
