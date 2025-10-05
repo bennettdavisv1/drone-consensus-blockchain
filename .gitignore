@@ -16,3 +16,5 @@ hedera-local-node/logs/
 # OS junk
 .DS_Store
 
+# Security
+.env
