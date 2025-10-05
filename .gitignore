@@ -1,0 +1,18 @@
+# Python virtual env
+venv/
+__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+
+# Hedera local node volumes
+hedera-local-node/network-secrets/
+hedera-local-node/node_state/
+hedera-local-node/hedera-data/
+hedera-local-node/mirror-node-data/
+hedera-local-node/logs/
+
+# OS junk
+.DS_Store
+

@@ -1,0 +1,23 @@
+{
+  "name": "hedera-scripts",
+  "version": "1.0.0",
+  "description": "Local Hedera Hashgraph test scripts for drone consensus project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node connect_test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hedera",
+    "hashgraph",
+    "drone",
+    "blockchain",
+    "local-node"
+  ],
+  "author": "Bennett Davis",
+  "license": "ISC",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.48.0"
+  }
+}
