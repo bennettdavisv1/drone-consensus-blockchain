@@ -29,7 +29,47 @@ We extend the prototype to a real distributed-ledger environment:
 - 💾 Blockchain-style immutable record of approvals.
 - ⚖️ Local Hedera Hashgraph network with real transactions.
 - 💰 Stake → Mint → Transfer → Consume Flight Throughput Credits.
-- 🧠 Modular architecture ready for Hedera Consensus Service integration.
+- 🧠 **NEW: Hedera Consensus Service (HCS) integration for real consensus**
+- 🔄 **NEW: Real-time conflict detection with message consumption**
+- 🎯 **NEW: Hybrid API supporting both Hedera and mock blockchain**
+- 📊 **NEW: Complete end-to-end testing and automation**
+
+---
+
+## 🆕 **NEW: Hedera Consensus Service Integration**
+
+### **Phase 3 — Real Blockchain Consensus** ✅
+
+The project now includes **complete Hedera Hashgraph integration**:
+
+- **Hedera Consensus Service (HCS)** for real distributed consensus
+- **Real-time message consumption** with conflict detection
+- **FTC token economy** with automatic payment processing
+- **Hybrid architecture** supporting both Hedera and mock blockchain
+- **Complete automation** with setup scripts and testing
+
+### **New Files Added:**
+- `hedera_flight_api.py` - Enhanced Flask API with Hedera integration
+- `hedera-scripts/setup_environment.js` - One-click environment setup
+- `hedera-scripts/submit_flightplan.js` - Flight plan submission with FTC payment
+- `hedera-scripts/consume_flightplans.js` - Real-time conflict detection
+- `test_flight_workflow.sh` - Complete end-to-end testing
+- `README_HEDERA_INTEGRATION.md` - Detailed integration documentation
+
+### **Quick Start with Hedera:**
+```bash
+# 1. Setup environment (creates accounts, tokens, topics)
+cd hedera-scripts && node setup_environment.js
+
+# 2. Test flight plan submission
+node submit_flightplan.js
+
+# 3. Start message consumer for conflict detection
+node consume_flightplans.js
+
+# 4. Run integrated API
+python hedera_flight_api.py
+```
 
 ---
 
@@ -157,9 +197,11 @@ drone-consensus-blockchain/
 | ----- | -------------------------------------------------------- | ---------- |
 | 1     | Mock blockchain API for flight-plan consensus            | ✅ Complete |
 | 2     | Local Hedera setup + FTC token economy                   | ✅ Complete |
-| 3     | Dynamic FTC minting based on stake balances              | 🔜 Next     |
-| 4     | Flight plan consensus via Hedera Consensus Service (HCS) | 🔜 Planned  |
-| 5     | Dashboard + map visualization for flight plans           | 🧩 Future   |
+| 3     | **Hedera Consensus Service (HCS) integration**         | ✅ **Complete** |
+| 4     | **Real-time conflict detection & consensus**             | ✅ **Complete** |
+| 5     | **Hybrid API with Hedera + fallback**                   | ✅ **Complete** |
+| 6     | Dynamic FTC minting based on stake balances              | 🔜 Next     |
+| 7     | Dashboard + map visualization for flight plans           | 🧩 Future   |
 
 ---
 
