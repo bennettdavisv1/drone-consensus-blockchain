@@ -1,0 +1,202 @@
+{
+    "entities": [
+        {
+            "id": "E001",
+            "name": "Amazon Drone Delivery",
+            "stake_hbar": 1500,
+            "ftc_balance": 250,
+            "entity_type": "commercial",
+            "base_location": [
+                36.12,
+                -86.67
+            ],
+            "description": "High-volume commercial delivery service",
+            "priority_level": "HIGH",
+            "typical_flight_duration": 30,
+            "flight_frequency": "high"
+        },
+        {
+            "id": "E002",
+            "name": "Vanderbilt Research Lab",
+            "stake_hbar": 1200,
+            "ftc_balance": 200,
+            "entity_type": "research",
+            "base_location": [
+                36.12,
+                -86.65
+            ],
+            "description": "Academic research and development",
+            "priority_level": "HIGH",
+            "typical_flight_duration": 60,
+            "flight_frequency": "medium"
+        },
+        {
+            "id": "E003",
+            "name": "Nashville Emergency Services",
+            "stake_hbar": 2000,
+            "ftc_balance": 300,
+            "entity_type": "emergency_services",
+            "base_location": [
+                36.12,
+                -86.70
+            ],
+            "description": "Emergency response and public safety",
+            "priority_level": "CRITICAL",
+            "typical_flight_duration": 20,
+            "flight_frequency": "variable"
+        },
+        {
+            "id": "E004",
+            "name": "FedEx Air Cargo",
+            "stake_hbar": 800,
+            "ftc_balance": 150,
+            "entity_type": "commercial",
+            "base_location": [
+                36.15,
+                -86.70
+            ],
+            "description": "Package delivery and logistics",
+            "priority_level": "MEDIUM",
+            "typical_flight_duration": 45,
+            "flight_frequency": "high"
+        },
+        {
+            "id": "E005",
+            "name": "Weather Monitoring Service",
+            "stake_hbar": 600,
+            "ftc_balance": 120,
+            "entity_type": "research",
+            "base_location": [
+                36.13,
+                -86.68
+            ],
+            "description": "Atmospheric data collection",
+            "priority_level": "MEDIUM",
+            "typical_flight_duration": 90,
+            "flight_frequency": "low"
+        },
+        {
+            "id": "E006",
+            "name": "Security Patrol Corp",
+            "stake_hbar": 750,
+            "ftc_balance": 140,
+            "entity_type": "surveillance",
+            "base_location": [
+                36.14,
+                -86.69
+            ],
+            "description": "Security and monitoring services",
+            "priority_level": "MEDIUM",
+            "typical_flight_duration": 30,
+            "flight_frequency": "medium"
+        },
+        {
+            "id": "E007",
+            "name": "Local Photography Drone",
+            "stake_hbar": 300,
+            "ftc_balance": 80,
+            "entity_type": "commercial",
+            "base_location": [
+                36.11,
+                -86.66
+            ],
+            "description": "Aerial photography and videography",
+            "priority_level": "LOW",
+            "typical_flight_duration": 25,
+            "flight_frequency": "medium"
+        },
+        {
+            "id": "E008",
+            "name": "Campus Security",
+            "stake_hbar": 200,
+            "ftc_balance": 60,
+            "entity_type": "surveillance",
+            "base_location": [
+                36.12,
+                -86.66
+            ],
+            "description": "University campus security patrol",
+            "priority_level": "LOW",
+            "typical_flight_duration": 20,
+            "flight_frequency": "low"
+        },
+        {
+            "id": "E009",
+            "name": "Agricultural Survey",
+            "stake_hbar": 150,
+            "ftc_balance": 50,
+            "entity_type": "research",
+            "base_location": [
+                36.10,
+                -86.65
+            ],
+            "description": "Crop monitoring and analysis",
+            "priority_level": "LOW",
+            "typical_flight_duration": 45,
+            "flight_frequency": "low"
+        },
+        {
+            "id": "E010",
+            "name": "Hobby Drone Pilot",
+            "stake_hbar": 50,
+            "ftc_balance": 20,
+            "entity_type": "recreational",
+            "base_location": [
+                36.13,
+                -86.67
+            ],
+            "description": "Recreational drone flying",
+            "priority_level": "LOW",
+            "typical_flight_duration": 15,
+            "flight_frequency": "variable"
+        }
+    ],
+    "simulation_config": {
+        "rounds": 3,
+        "conflict_scenarios": true,
+        "economic_analysis": true,
+        "performance_metrics": true
+    },
+    "stake_tiers": {
+        "high": {
+            "min_stake": 1000,
+            "entities": [
+                "E001",
+                "E002",
+                "E003"
+            ],
+            "ftc_multiplier": 1.5,
+            "priority_boost": true
+        },
+        "medium": {
+            "min_stake": 500,
+            "max_stake": 999,
+            "entities": [
+                "E004",
+                "E005",
+                "E006"
+            ],
+            "ftc_multiplier": 1.2,
+            "priority_boost": false
+        },
+        "low": {
+            "min_stake": 100,
+            "max_stake": 499,
+            "entities": [
+                "E007",
+                "E008",
+                "E009"
+            ],
+            "ftc_multiplier": 1.0,
+            "priority_boost": false
+        },
+        "minimal": {
+            "max_stake": 99,
+            "entities": [
+                "E010"
+            ],
+            "ftc_multiplier": 0.8,
+            "priority_boost": false
+        }
+    }
+}
